@@ -1,0 +1,159 @@
+*{
+    font-family: cursive;
+    color: black;
+}
+h5{
+    color: rgb(15, 15, 15);
+}
+
+.botonera{
+    background-color: rgb(229, 241, 241);
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav ul{
+    display: flex;
+    margin-left: 50px;
+    font-size: 23px;
+}
+
+nav ul li  a:hover{
+        color: rgb(77, 5, 5);
+        text-decoration: overline;
+
+}
+
+header img{
+    width: 100%;
+}
+
+footer{
+    background-color: darkslategrey;
+
+}
+
+.texto {
+    text-align: center;
+}
+.carousel-inner {
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    margin: auto;
+    margin-top:auto ;
+
+}
+
+table tr:hover {
+    background-color: rgb(212, 208, 208);
+} 
+
+.Formulario{
+    background: url(../img/url.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+}
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+textarea{
+    min-height: 100px;
+    max-height:200px ;
+}
+#Boton{
+    background:#f16451 ;
+    color: rgb(168, 157, 157);
+    padding: 20px;
+    
+}
+#Boton:hover{
+    cursor: pointer;
+}
+
+@media(max-width:480){
+    form{
+        width: 100%;
+    }
+}
+iframe{
+    padding: 10px 20px;
+}
+
+.contenedor-empresa{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+}
+
+.contenedor-empresa > div ,
+.contenedor-empresa.imagen1,
+.contenedor-empresa.imagen2,
+.contenedor-empresa.imagen3 {
+    background: rgb(243, 41, 34);
+    padding: 10px;
+    border-radius: 2px;
+    color: aliceblue;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+
+}
+
+.contenedor-empresa .header{
+    background: #1a29ee;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+.contenedor-empresa .contenido{
+    grid-column: span 2;
+}
+.contenedor-empresa.imagen1{
+    grid-column: 2/4;
+    background: #bbce14;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: span 3;
+} 
+
+.contenedor-empresa.imagen3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+
+
+
+
+
+
